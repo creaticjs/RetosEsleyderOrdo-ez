@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Linq Bootcamp</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+    <script src="js/game.js"></script>
+
+
+
+</head>
+
+<body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/linq.min.js"></script>
+    <div class="container_wrap no-seleccionable">
+        <script>
+            var dataset = [{
+                    id: 1,
+                    nombre: "Esleyder",
+                    edad: 23
+                },
+                {
+                    id: 1,
+                    nombre: "Carlos",
+                    edad: 30
+                },
+                {
+                    id: 1,
+                    nombre: "Angelica",
+                    edad: 26
+                }
+            ]
+            var query = Enumerable.From(dataset)
+            .Where("$.edad == 26").ToArray();
+        </script>
+    </div>
+</body>
+
+</html>

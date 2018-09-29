@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Cat API Bootcamp</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/animalapi.js"></script>
+
+</head>
+
+<body>
+
+    <div class="ui pointing menu">
+        <a class="active item">
+            Inicio
+        </a>
+        <div class="ui dropdown itemPets item">
+            Mascota
+            <i class="dropdown icon"></i>
+            <div class="menu">
+                <div class="item" id="btnGoToCats">Gatos</div>
+                <div class="item" id="btnGoToDogs">Perros</div>
+            </div>
+        </div>
+        <div class="right menu">
+            <div class="item">
+                <div class="ui transparent icon input">
+                    <input type="text" placeholder="Buscar mascota...">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ui segment">
+
+        <div class="ui grid">
+            <div class="six wide column">
+                <div class="containerCat">
+                    <div class="content">
+                        <div class="column">
+                            <h1>Imagen de un <span class="petRandom"></span> al azár</h1>
+                            <img id="imgOfDay">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Imagenes aletatorias-->
+            <div class="ten wide column">
+                <div class="ui grid " >
+                    <h1>Galeria de imagenes de <span class="petRandom"></span>s</h1>
+                    <div class="ui small images wrapImagesPets"></div>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

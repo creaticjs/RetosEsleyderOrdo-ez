@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Peliculas</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css" rel="stylesheet" />
+    <script src="js/romanize.js"></script>
+    <script src="js/movies.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/movies.css" />
+    <link rel="shortcut icon" href="assets/Favicon.ico">
+</head>
+
+<body onload="loadStarWarsMovies();">
+    <div class="ui menu inverted sticky">
+        <a href="/" class="header item">
+            <img class="logo" src="http://www.vinilosconencanto.com/524/star-wars-logotipo.jpg">
+        </a>
+        <a class="active item" href="/">
+            Inicio
+        </a>
+        <a class="item" href="movies">
+            Peliculas
+        </a>
+        <a class="item" href="credits">
+            Creditos
+        </a>
+
+    </div>
+    <div class="ui grid">
+        <div class="sixteen wide column" id="containerMovieResponse">
+
+        </div>
+    </div>
+    <div class="ui inverted vertical footer segment">
+        <div class="ui center aligned container">
+
+
+            <div class="ui stackable inverted divided grid">
+                <div class="four wide column columnCompany">
+                    <h4 class="ui inverted header text-center">Creatic</h4>
+                    <a href="http://clustercreatic.com/" target="_blank"><img src="assets/creatic-logo.png" class="ui centered mini image footerImage"></a>
+                    <div class="ui inverted link list">
+                        <p>CreaTIC, una iniciativa privada conformada por un grupo de empresas de las Tecnologías de la
+                            Información y las Comunicaciones - TIC.</p>
+                    </div>
+                </div>
+                <div class="four wide column columnCompany">
+                    <h4 class="ui inverted header text-center">The Bit Bang Company</h4>
+                    <a href="http://clustercreatic.com/" target="_blank"><img src="https://pbs.twimg.com/profile_images/718225865855868930/dh9O7daX_400x400.jpg"
+                            class="ui centered mini image footerImage"></a>
+                    <div class="ui inverted link list">
+                        <p>Desarrollamos soluciones innovadoras en web y móvil para el sector gobierno, agroindustria,
+                            y
+                            financiero basadas en Big data y Análisis de datos.</p>
+                    </div>
+                </div>
+
+                <div class="four wide column columnCompany">
+                    <h4 class="ui inverted header text-center">Platzi</h4>
+                    <a href="http://platzi.com/" target="_blank"><img src="https://d1qb2nb5cznatu.cloudfront.net/startups/i/228069-3505671d2fa91218bd7676733164afe9-medium_jpg.jpg?buster=1426816465"
+                            class="ui centered mini image footerImage"></a>
+                    <div class="ui inverted link list">
+                        <p>Aprende desde cero a crear el futuro de la web. Cursos de Desarrollo, Diseño, Marketing, y
+                            Negocios.</p>
+                    </div>
+
+                </div>
+
+                <div class="four wide column ">
+                    <h4 class="ui inverted header">Desarrollador</h4>
+                    <div class="ui inverted link list">
+                        <p>Esleyrder Ordoñez</p>
+                        <div class="social">
+                            <a href="https://www.facebook.com/megaesleyder" target="_blank" class="ui circular facebook icon button">
+                                <i class="facebook icon"></i>
+                            </a>
+                            <a href="https://github.com/esleyder86/" target="_blank" class="ui circular github icon button">
+                                <i class="github icon"></i>
+                            </a>
+                            <a href="https://plus.google.com/107368730804260706265" target="_blank" class="ui circular google plus icon button">
+                                <i class="google plus icon"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="ui inverted section divider"></div>
+        <a href="#" target="_blank"><img src="http://www.vinilosconencanto.com/524/star-wars-logotipo.jpg" class="ui centered mini image logoFooter"></a>
+
+        <div class="ui horizontal inverted small divided link list footerMenu">
+            <a class="item" href="/">Inicio</a>
+            <a class="item" href="movies">Peliculas</a>
+            <a class="item" href="credits">Creditos</a>
+        </div>
+
+    </div>
+    <div class="ui active dimmer medium" id="preloaderStarWars">
+        <div class="ui text loader txtLoader">Cargando...</div>
+    </div>
+
+</body>
+
+</html>

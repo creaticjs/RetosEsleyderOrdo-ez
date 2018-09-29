@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+    <title>Futbol Bootcamp</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
+    <script src="js/rgbaster.js"></script>
+    <script src="js/game.js"></script>
+
+
+
+</head>
+<body onload="save_teams();">
+
+<div class="container_wrap no-seleccionable">
+
+    <div id="app_game">
+
+            <main>
+  
+                    <input id="tab1" type="radio" name="tabs" checked>
+                    <label class="lbl_tab" for="tab1">Equpos de futbol</label>
+                      
+                    <input id="tab2" type="radio" name="tabs">
+                    <label class="lbl_tab" for="tab2">División española</label>
+                      
+                      
+                    <section id="content1">
+                            <div id="interactive_game">
+
+                                    <h1>División española</h1>     
+  
+                                     <select id="slt_teams" onchange="load_data_sheet();">
+                                          <option value="">Seleccione un equipo</option>
+                                     </select>
+                                 
+                                     <button id="show_form" onclick="show_create_team();">Crear equpo de futbol</button>
+                                     <div id="frm_new_team">
+                                         <h2>Crear ficha técnica</h2>
+                                         <div class="wrap_new_form">
+                                             <label>Nombre:</label>
+                                             <input name="txt_name" id="txt_new_name" >
+                                         </div>
+                                         <div class="wrap_new_form">
+                                             <label>Escudo:</label>
+                                             <input type="url" name="txt_image" id="txt_new_image">
+                                         </div>                
+                                         <div class="wrap_new_form">
+                                             <label> Fundación:  </label>
+                                             <input name="txt_fundation" id="txt_new_fundation">
+                                         </div>
+                                             
+                                         <div class="wrap_new_form">
+                                             <label>Estadio:</label>
+                                             <input name="txt_stadium" id="txt_new_stadium">
+                                         </div>
+                                         <div class="wrap_new_form">
+                                             <label>Reseña:</label>
+                                             <textarea name="txt_review" id="txt_new_review" rows="8"></textarea>
+                                         </div>
+                                         <button id="btn_save_team"  onclick="save_new_team();">Guardar equipo</button>
+                                     </div>
+                                 </div>    
+                         
+                                 <div id="data_sheet">
+                                     <div class="wrap_image_logo">
+                                         <img id="dinamic_img"/>
+                                     </div>    
+                                     <div class="wrap_team">
+                         
+                                         <label class="lbl_team">
+                                             Nombre:    
+                                         </label>
+                                         <div class="value_team" id="txt_name"></div>
+                                     </div>
+                                     
+                                     <div class="wrap_team">
+                         
+                                         <label class="lbl_team">
+                                             Fundación:    
+                                         </label>
+                                         <div class="value_team" id="txt_fundation"></div>
+                                     </div>
+                                     
+                                     <div class="wrap_team">
+                         
+                                        <label class="lbl_team">
+                                            Estadio:    
+                                        </label>
+                                        <div class="value_team" id="txt_estadium"></div>
+                                    </div>
+                        
+                         
+                                     <div class="wrap_team">
+                         
+                                         <label class="lbl_team">
+                                             Reseña:    
+                                         </label>
+                                         <div class="value_team" id="txt_review"></div>
+                                     </div>
+                                     
+                                     
+                                     <table id="tbl_statistics">
+                                        <thead>
+                                            <tr id="tr_tbl_statistics">
+                                                <th>Estadisticas</th>
+                                                <th>Valor</th>
+                                            </tr>    
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Jugados</td>
+                                                <td>
+                                                    <div class="value_pj indicator_team" id="txt_pj"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Ganados</td>
+                                                <td>
+                                                    <div class="value_pj indicator_team" id="txt_g"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Empatados</td>
+                                                <td>
+                                                    <div class="value_pj indicator_team" id="txt_e"></div>
+                                                </td>
+                                            </tr>     
+                                            <tr>
+                                                <td>Perdidos</td>
+                                                <td>
+                                                    <div class="value_pj indicator_team" id="txt_p"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Goles a favor</td>
+                                                <td>
+                                                    <div class="value_pj indicator_team" id="txt_gf"></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>Goles en contra</td>
+                                                <td>
+                                                    <div class="value_pj indicator_team" id="txt_gc"></div>
+                                                </td>
+                                            </tr> 
+                                            <tr>
+                                                <td>Puntos</td>
+                                                <td>
+                                                    <div class="value_pj indicator_team" id="txt_pts"></div>
+                                                </td>
+                                            </tr>                                                                                                                                    
+                                        </tbody>
+                                     </table>
+
+
+                    </section>
+                      
+                    <section id="content2">
+                        <h1>División española 2018 - 2019</h1>
+
+                        <div class="filters">
+                            <button id="btn_sort_by_name" onclick="order_by_name();">Ordenar por equipo</button>
+                            <button id="btn_sort_by_pts" onclick="order_by_pts();">Ordenar por puntos</button>
+                        </div>    
+                        <table id="tbl_teams_division">
+                            <thead>
+                                <th>#</th>
+                                <th>Escudo</th>
+                                <th>Equipo</th>
+                                <th>Jugados</th>
+                                <th>Ganados</th>
+                                <th>Empatados</th>
+                                <th>Perdidos</th>
+                                <th>Goles a favor</th>
+                                <th>Goles en contra</th>
+                                <th>Puntos</th>
+                            </thead>
+                            <tbody></tbody>
+                            
+                        </table>   
+
+                    </section>
+                
+                      
+                  </main>
+
+        
+
+    </div>
+</body>
+</html>

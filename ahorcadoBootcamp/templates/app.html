@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <title>Ahorcado Bootcamp</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+          integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="js/game.js"></script>
+
+
+
+</head>
+<body>
+
+<div class="container_wrap no-seleccionable">
+
+    <div id="app_game">
+        <div id="header">
+
+            <div class="all_intents">Intentos</div>
+            <div class="rest_intents"></div>
+
+        </div>
+
+        <div id="interactive_game">
+            <div id="btn_track" title="Pista">
+                <img src="assets/bulb.png"/>
+            </div>
+            <div class="msg_final msg_game_over">
+                Perdiste
+                <div class="btn_restart_game lose">Volver a jugar</div>
+            </div> 
+            <div class="msg_final msg_game_win">
+                Ganaste
+                <div class="btn_restart_game win">Volver a jugar</div>
+            </div>    
+            <div class="dinamic_character">
+                <div class="base_top_vertical part_hidden" id="part8"></div>
+                <div class="base_vertical"></div>
+                <div class="completed_character">
+                    <div class="head_character part_hidden" id="part1">
+                        <div class="face_character part_hidden" id="part2">
+                            <div class="eye_left"></div>
+                            <div class="eye_right"></div>
+                            <div class="nose"></div>
+                            <div class="mout">
+                                <div class="happy"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="body_character part_hidden" id="part3"></div>
+                    <div class="container_character">
+                        <div class="hand_left_character part_hidden" id="part4"></div>
+                        <div class="hand_right_character part_hidden" id="part5"></div>
+                        
+                        <div class="footer_left_character part_hidden" id="part6"></div>
+                        <div class="footer_right_character part_hidden" id="part7"></div>
+                    </div>  
+                </div>
+                <div class="base_horizontal"></div> 
+            </div>
+
+        </div>
+        
+        <div id="interactive_word">
+
+        </div>
+
+        <div id="interactive_list_words">
+            <div class="img_board">   
+            </div>
+            
+            <div id="wrap_words"></div>    
+        </div>
+
+    </div>
+</body>
+</html>
