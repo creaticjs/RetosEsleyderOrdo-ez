@@ -90,8 +90,13 @@ $(function () {
         "x-api-key": randmonPet[0][pet].key
       }
     }
-    $.ajax(settingsAll).done(function (response) {
+    $.when($.ajax(settingsAll)).done(function (response) {
       $('#imgOfDay').attr('src', response[0].url)
+
+      response = $.Enumerable.From(response)
+      .OrderByDescending("$.id")
+      .ToArray();
+      console.log(response)
 
       var dominant = "red"
       $(response).each(function (index) {

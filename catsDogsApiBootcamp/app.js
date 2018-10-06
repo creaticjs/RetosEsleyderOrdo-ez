@@ -8,6 +8,9 @@ path = require('path');
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/templates/app.html');
 });
+app.get('/chat', function(req, res){
+  res.sendFile(__dirname + '/templates/chat.html');
+});
 
 app.use(express.static(__dirname + '/public'));
 
