@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Cat API Bootcamp</title>
+    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/linq.js/2.2.0.2/jquery.linq.min.js"></script>
+    <script src="js/rgbaster.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div id="mensajes">
+        <p>Hola</p>
+    </div>
+    <input id="textoMsg"/>
+    <button id="enviar">Enviar</button>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDHXAB32EHGX2DbgKIjaeixYt8vW2ynJNE",
+            authDomain: "chatbootcamp-701d9.firebaseapp.com",
+            databaseURL: "https://chatbootcamp-701d9.firebaseio.com",
+            projectId: "chatbootcamp-701d9",
+            storageBucket: "chatbootcamp-701d9.appspot.com",
+            messagingSenderId: "474313197683"
+        };
+        firebase.initializeApp(config);
+        // Conectarse a la base de datos y a una “tabla” o colección de datos
+        var basedeDatos = firebase.database().ref('mensajes');
+        basedeDatos.on('child_added', function (data) {
+
+            $('#mensajes').append(`</p><p>${data.val().body}<p/>`);
+        });
+        $('#enviar').on('click', enviarMSG);
+        $('#textoMsg').on('keypress', function (e) {
+            if (e.which == 13) {
+                enviarMSG();
+            }
+        });
+
+        function enviarMSG() {
+            console.log('Enviar mensaje');
+            basedeDatos.push().set({
+                body: $('#textoMsg').val()
+            })
+            $('#textoMsg').val('');
+        }
+    </script>
+</body>
+
+</html>
