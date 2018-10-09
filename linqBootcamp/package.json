@@ -1,9 +1,0 @@
-{
-  "name": "linq",
-  "version": "0.0.1",
-  "description": "linq app",
-  "dependencies": {
-    "express": "^4.15.2"
-
-  }
-}
