@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2cc029af-f426-4859-b774-4556bacb2d29" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/catsDogsApiBootcamp/.idea/app_chat.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catsDogsApiBootcamp/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catsDogsApiBootcamp/.idea/modules.xml" beforeDir="false" />
@@ -4239,7 +4238,6 @@
       <change beforePath="$PROJECT_DIR$/catsDogsApiBootcamp/public/js/game.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catsDogsApiBootcamp/sass/mystyles.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/catsDogsApiBootcamp/templates/app.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -4300,7 +4298,7 @@
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="149">
-              <caret line="60" column="90" selection-start-line="60" selection-start-column="90" selection-end-line="60" selection-end-column="90" />
+              <caret line="60" column="61" lean-forward="true" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -4321,7 +4319,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="13770">
+            <state relative-caret-position="315">
               <caret line="765" column="101" selection-start-line="765" selection-start-column="101" selection-end-line="765" selection-end-column="101" />
             </state>
           </provider>
@@ -4377,7 +4375,7 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/catsDogsApiBootcamp" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -4432,6 +4430,24 @@
               <item name="retosBootcamp" type="b2602c69:ProjectViewProjectNode" />
               <item name="retosBootcamp" type="462c0819:PsiDirectoryNode" />
               <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="retosBootcamp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="retosBootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="catsDogsApiBootcamp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="retosBootcamp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="retosBootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="catsDogsApiBootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="retosBootcamp" type="b2602c69:ProjectViewProjectNode" />
+              <item name="retosBootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="catsDogsApiBootcamp" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -4497,12 +4513,12 @@
       <workItem from="1540142176789" duration="1932000" />
       <workItem from="1540244328597" duration="7401000" />
       <workItem from="1540254941946" duration="888000" />
-      <workItem from="1540255895622" duration="219000" />
+      <workItem from="1540255895622" duration="482000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18287000" />
+    <option name="totallyTimeSpent" value="18934000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1366" height="710" extended-state="6" />
@@ -4573,12 +4589,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/catsDogsApiBootcamp/index.html">
+    <entry file="file://$PROJECT_DIR$/starWarsBootcamp/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        <state relative-caret-position="2430">
+          <caret line="135" column="56" selection-start-line="135" selection-start-column="54" selection-end-line="135" selection-end-column="56" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/starWarsBootcamp/movies.html">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/linqBootcamp/index.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -4587,34 +4606,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/starWarsBootcamp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="135" column="56" selection-start-line="135" selection-start-column="54" selection-end-line="135" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/starWarsBootcamp/movies.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-28" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/assets/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
+        <state relative-caret-position="315">
           <caret line="765" column="101" selection-start-line="765" selection-start-column="101" selection-end-line="765" selection-end-column="101" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="293">
-          <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="74" selection-end-column="17" />
+        <state relative-caret-position="149">
+          <caret line="60" column="61" lean-forward="true" selection-start-line="60" selection-start-column="61" selection-end-line="60" selection-end-column="61" />
           <folding>
-            <element signature="e#5948#5954#1" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catsDogsApiBootcamp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-272">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/catsDogsApiBootcamp/public/js/animalapi.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
         </state>
       </provider>
     </entry>

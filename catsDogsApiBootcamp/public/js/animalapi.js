@@ -4,7 +4,7 @@ var randmonPet = [{
   cat: {
     title: 'gato',
     preloader: 'http://ai-hmi.com/wp-content/plugins/preloader-sws/assets/img/bg-true/running-cat.gif',
-    loading: '../public/assets/catloader.gif',
+    loading: 'public/assets/catloader.gif',
     urlAll: 'https://api.thecatapi.com/v1/images/search?limit=4',
     urlFirst: 'https://api.thecatapi.com/v1/images/search?',
     key: 'e2b85e5b-d7af-4590-8d0c-0cda7dfb9737'
@@ -12,7 +12,7 @@ var randmonPet = [{
   dog: {
     title: 'perro',
     preloader: 'https://i.gifer.com/GjoH.gif',
-    loading: '../public/assets/dogloader.gif',
+    loading: 'public/assets/dogloader.gif',
     urlFirst: 'https://api.thedogapi.com/v1/images/search?',
     urlAll: 'https://api.thedogapi.com/v1/images/search?limit=4',
     key: '23315eeb-3433-43a2-94e5-b634a5c5434e'
