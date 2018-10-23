@@ -82,7 +82,7 @@ $(function () {
     
     let settingsAll = {
       "async": true,
-      "crossDomain": true,
+      "crossDomain": false,
       "url": randmonPet[0][pet].urlAll,
       "method": "GET",
       "headers": {
