@@ -1,67 +1,111 @@
 <!doctype html>
-<html>
-
+<html lang="es" id="style-3">
 <head>
-    <title>Cat API Bootcamp</title>
-    <link href="https://fonts.googleapis.com/css?family=Jua" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootcamps Projects</title>
+    <link rel="icon" href="data:image/png;base64,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">
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,500,600,700,800' rel='stylesheet'
+          type='text/css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.9/semantic.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/animalapi.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/0.12.0/css/semantic.min.css" rel="stylesheet"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
+    <script src="assets/index.js"></script>
 
 </head>
-
 <body>
-
-    <div class="ui pointing menu">
-        <a class="active item">
-            Inicio
+<section class="page parallax with background fixed">
+    <nav class="nav">
+        <ul>
+            <li class=active><a href="#" class="link_page">Inicio</a></li>
+            <li><a class="link_page" href="#" data-page=.page.projects>Proyectos</a></li>
+            <li><a class="link_page" href="#" data-page=.page.thanks>Agradecimientos</a></li>
+            <li><a class="link_page" href="#" data-page=.page.about>Acerca de mi</a></li>
+        </ul>
+    </nav>
+    <div class='inner text center'>
+        <h1>BootCamp </h1>
+        <h3>Carrera Full Stack Javascript 2018</h3>
+    </div>
+    <div class="go down">
+        <a class="link_page" href="#" data-page=.page.projects>
+            <div class="arrow"></div>
         </a>
-        <div class="ui dropdown itemPets item">
-            Mascota
-            <i class="dropdown icon"></i>
-            <div class="menu">
-                <div class="item" id="btnGoToCats">Gatos</div>
-                <div class="item" id="btnGoToDogs">Perros</div>
-            </div>
-        </div>
-        <div class="right menu">
-            <div class="item">
-                <div class="ui transparent icon input">
-                    <input type="text" placeholder="Buscar mascota...">
-                    <i class="search link icon"></i>
+    </div>
+</section>
+
+<section class="page projects with white background">
+    <div class="inner">&nbsp;</div>
+    <div class='containerProjects'>
+
+        <div class="wrapProjects">
+            <h1>Proyectos</h1>
+            <div class="wrapProject" id="wrapProject1">
+                <div class="project" id="project1">
                 </div>
+            </div>
+            <div class="wrapProject" id="wrapProject2">
+                <div class="project" id="project2">
+                </div>
+            </div>
+            <div class="wrapProject" id="wrapProject3">
+                <div class="project" id="project3">
+                </div>
+            </div>
+            <div class="wrapProject" id="wrapProject4">
+                <a href="http://facebook.com" target="_blank"><div class="project" id="project4">
+                </div></a>
             </div>
         </div>
     </div>
-    <div class="ui segment">
+</section>
 
-        <div class="ui grid">
-            <div class="six wide column">
-                <div class="containerCat">
-                    <div class="content">
-                        <div class="column">
-                            <h1>Imagen de un <span class="petRandom"></span> al azár</h1>
-                            <img id="imgOfDay">
-                        </div>
-                    </div>
-                </div>
+<section class="page with white background">
+    <div class="sectionCompany" id="sectionCompany1">
+        <div class="inner">&nbsp;</div>
+        <div class='container'>
+            <div style="max-width: 530px">
+                <h1>Cluster Creatic</h1>
+                <p><strong>CREA EMPRESAS DE IMPACTO GLOBAL</strong><br/>Somos Cauca Región de Emprendimiento Avanzado en
+                    TIC – CreaTIC, una iniciativa privada conformada por un grupo de empresas de las Tecnologías de la
+                    Información y las Comunicaciones </p>
             </div>
-            <!--Imagenes aletatorias-->
-            <div class="ten wide column">
-                <div class="ui grid " >
-                    <h1>Galeria de imagenes de <span class="petRandom"></span>s</h1>
-                    <div class="ui small images wrapImagesPets"></div>
-
-                </div>
-                
+            <div class="imageCompany" id="imgCompanyCreatic">
+                <img src="http://clustercreatic.com/media/filer_public/f5/37/f5379ee3-d4d3-42e5-be93-bca365719946/creatic-png.png">
             </div>
         </div>
-
     </div>
+    <div class="sectionCompany page thanks" id="sectionCompany2">
+        <div class="inner">&nbsp;</div>
+        <div class='container'>
+            <div style="max-width: 530px">
+                <h1>The Bit Bang Company</h1>
+                <p><strong>Analisis de datos e inteligencia artificial</strong><br/>Desarrollamos soluciones innovadoras
+                    en web y móvil para el sector gobierno, agroindustria, y financiero basadas en Big data y Análisis
+                    de datos.</p>
+            </div>
+            <div class="imageCompany">
+                <img src="https://pbs.twimg.com/profile_images/718225865855868930/dh9O7daX_400x400.jpg">
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section class="page about with background">
+    <div class='inner'>
+        <div class='container text right'>
+            <h1>Acerca de mi </h1>
+            <p>Apasionado por las nuevas tecnologias, <br/>
+                Portafolio de mis proyectos en <span class='small text'><a
+                        href="https://github.com/esleyder86?tab=repositories">Github</a></span></p>
+        </div>
+    </div>
+</section>
 </body>
-
 </html>
